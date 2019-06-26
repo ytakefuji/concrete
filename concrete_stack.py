@@ -8,8 +8,8 @@ kfold = KFold(n_splits=10, shuffle=True, random_state=7)
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import ExtraTreesRegressor
 from mlxtend.regressor import StackingRegressor
-rf=RandomForestRegressor(n_estimators=682, max_depth=None,random_state=8)
-ext=ExtraTreesRegressor(n_estimators=682,min_samples_split=2,random_state=8)
+rf=RandomForestRegressor(n_estimators=54, max_depth=None,random_state=7)
+ext=ExtraTreesRegressor(n_estimators=84,min_samples_split=2,random_state=7)
 clf=StackingRegressor(regressors=[ext],meta_regressor=rf)
 
 scores=[]
