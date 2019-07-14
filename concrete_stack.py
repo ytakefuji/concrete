@@ -1,9 +1,10 @@
+#run python3
 import pandas as pd
 import numpy as np
 conc=pd.read_csv('concrete.csv')
 from sklearn.model_selection import KFold
-y=np.array(conc['csMPa'])
-X=np.array(conc.drop(['csMPa'],axis=1))
+y=np.array(conc['strength'])
+X=np.array(conc.drop(['strength'],axis=1))
 kfold = KFold(n_splits=10, shuffle=True, random_state=7)
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import ExtraTreesRegressor
