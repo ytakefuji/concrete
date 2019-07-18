@@ -17,7 +17,7 @@ concrete_rf32.py: decision tree in Python2.X
 concrete_rf33.py: decision tree in Python3.X
 concrete_rf4.py: cross-validation
 concrete_stack.py: stacking using rf and ext
-keras_cnn.py: Deep Learning using Keras
-mnist_torch.py: Deep Learning using Pytorch
+keras_cnn.py: Deep Learning using Keras (reproducibility problem with multiple GPUs)
+mnist_torch.py: Deep Learning using Pytorch (no reproducibility problem)
 </pre>
 
