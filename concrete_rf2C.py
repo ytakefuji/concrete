@@ -21,4 +21,6 @@ dic=dict(zip(X.columns,clf.feature_importances_))
 for item in sorted(dic.items(), key=lambda x: x[1], reverse=True):
     print(item[0],round(item[1],4))
 X=[198.6,132.4,0.0,192.0,0.0,978.4,825.5,360]
-print(clf.predict(X))
+print(clf.predict([X]))
+print(clf.predict(np.reshape(X,(1,len(X)))))
+print(clf.predict(np.reshape(X,(1,-1))))
