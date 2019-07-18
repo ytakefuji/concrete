@@ -13,7 +13,7 @@ concrete_ext.py: extratrees algorithm
 concrete_rf.py: randomforest algorithm
 concrete_rf2.py: a single input to trained machine (error message will be generated)
 concrete_rf2C.py: a single input to trained machine (error is corrected)
-concrete_rf3.py: decision tree in Python2.X
+concrete_rf32.py: decision tree in Python2.X
 concrete_rf33.py: decision tree in Python3.X
 concrete_rf4.py: cross-validation
 concrete_stack.py: stacking using rf and ext
