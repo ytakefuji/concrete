@@ -12,4 +12,4 @@ X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2,random_state=90
 from sklearn.ensemble import ExtraTreesClassifier
 clf=ExtraTreesClassifier(n_estimators=382, n_jobs=-1,max_depth=None,min_samples_split=2,random_state=90)
 clf.fit(X_train,y_train)
-print(clf.score(X_test,y_test))
+print("%.4f"%clf.score(X_test,y_test))
