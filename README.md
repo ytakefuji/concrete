@@ -1,5 +1,5 @@
 # concrete
-This is a civil engineering application for understanding machine learning.
+There are two civil engineering applications for understanding machine learning: predicting concrete strength and detecting concrete cracks. MNIST dataset is introduced for image machine learning. SDNET2018 dataset is used for detecting concrete cracks.
 In order to run a program in this folder, you must install python using miniconda:
 <pre>
 https://docs.conda.io/en/latest/miniconda.html
