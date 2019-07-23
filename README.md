@@ -24,6 +24,7 @@ createcsvCD.py: Converting images in CD folder into cd_gray.csv file
 createcsvUD.py: Converting images in UD folder into ud_gray.csv file
 ext_crack.py: extratrees for detecting cracks
 rf_crack.py: randomforest for detecting cracks
-lgbm_crack.py: LightGBM for detecting cracks
+lgbm_crackCPU.py: LightGBM-CPU for detecting cracks
+lgbm_crackGPU.py: LightGBM-GPU for detecting cracks
 </pre>
 
