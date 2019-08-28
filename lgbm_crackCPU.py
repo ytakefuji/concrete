@@ -34,5 +34,10 @@ gbm = lgb.train(params,
                 verbose_eval=1,
                 early_stopping_rounds=5)
 y_pred = gbm.predict(X_test, num_iteration=gbm.best_iteration)
-from sklearn.metrics import roc_auc_score
-print("%.4f"%roc_auc_score(y_test,y_pred))
+from sklearn.metrics import accuracy_score
+pred=[]
+for i in y_pred:
+ if i>0.5: pred.append(1)
+ else:pred.append(0)
+y_pred=pred
+print("%.4f"%accuracy_score(y_test,y_pred))
